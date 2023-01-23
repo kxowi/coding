@@ -1,0 +1,120 @@
+/* 1. Sélectionnez seulement les éléments qui ont à la fois les classes "title" ET 
+"main-title" et donnez-leur un background "khaki" */
+
+/* 2. Sélectionnez seulement les h2 qui descendent directement d'un élément parent 
+avec la classe ".content" et donnez-leur la couleur "red" */
+
+/* 3. Sélectionnez tous les éléments qui contiennent la classe "txt" et tous les éléments 
+qui contiennent la classe "article-link" à l'aide du même sélecteur, 
+et donnez-leur la couleur "darkcyan" */
+
+/* 4. Selectionnez seulement le bouton qui contient la classe "modify-btn" 
+et qui est directement précédé par le bouton contenant la classe "delete-btn" 
+et donnez-lui un fond "hotpink" */
+
+/* 5. Sélectionnez les inputs qui contiennent l'attribut type="text" 
+et donnez-leur un fond "slateblue" */
+
+/* 6. Changez la couleur de fond du formulaire en "lightblue" 
+seulement quand un des enfants reçoit le focus */
+
+/* 7. Sélectionnez le 4ème élément de la liste et donnez-lui un fond "seagreen" */
+
+/* 8. sélectionnez tous les li sauf le 5ème et donnez-leur un fond "midnightblue" */
+
+/* 9. Sélectionnez seulement les liens pointant vers des sites sécurisés(https) 
+et donnez-leur un fond "plum"*/
+
+/* 10. Donnez une couleur de fond "crimson" à la premiere ligne du dernier paragraphe 
+et augmentez la taille de sa première lettre à 50px */
+
+/* Vous avez besoin de faire deux sélections */
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    padding: 0;
+}
+body {
+    background: #f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 50px;
+    color: #333;
+}
+h1 {
+    margin-top: 0;
+}
+button {
+    margin-top: 15px;
+    padding: 10px 12px;
+    cursor: pointer;
+}
+.label, .input {
+    display: block;
+}
+label {
+    margin-bottom: 3px;
+}
+input {
+    display: block;
+    padding: 5px;
+    min-width: 350px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 1px solid rgb(116, 116, 116);
+}
+
+ul {
+    padding: 15px;
+    font-size: 18px;
+}
+ul li {
+    margin: 7px 0;
+}
+a {
+    color: #333;
+    font-size: 20px;
+}
+
+.title, .main-title{
+    background: khaki;
+}
+
+.content>h2{
+    color: red;
+}
+
+.txt, .article-link{
+    color: darkcyan;
+}
+
+.delete-btn + .modify-btn {
+    color: hotpink;
+}
+
+input[type=text] {
+    color:slateblue;
+}
+
+input:focus{
+    background-color: lightblue;
+}
+
+ul li:nth-child(4){
+    background-color: seagreen;
+}
+
+ul li:nth-child(-n + 3){
+    background-color: midnightblue;
+}
+
+a[href^="https"]{
+    background-color: plum;
+}
+
+.final-txt::first-line{
+    background-color: crimson;
+}
+
+.final-txt::first-letter{
+    font-size: 50px;
+}
