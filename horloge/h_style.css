@@ -1,0 +1,36 @@
+/* body{
+    padding: 30px;
+} */
+
+.horloge{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    border: 5px solid burlywood;
+}
+
+
+.heure {
+    height: 170px;
+    width: 10px;
+    background-color: burlywood;
+    transform-origin: 100% 50%;
+    translate: 200px 30px;
+}
+
+.minute {
+    height: 190px;
+    width: 8px;
+    background-color: brown;
+    transform-origin: 100% 50%;
+    translate: 200px 10px;
+}
+
+.seconde {
+    height: 190px;
+    width: 5px;
+    background-color: black;
+    transform-origin: 100% 50%;
+    translate: 200px 10px;
+}
+
